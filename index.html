@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* External Styling */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1 -->
+        <section id="page1">
+            <h1>Welcome to Page 1</h1>
+            <p>This is some text content for the first page.</p>
+            <img src="image1.jpg" alt="Image 1">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Page 2 -->
+        <section id="page2">
+            <h2>Welcome to Page 2</h2>
+            <p>This is some text content for the second page.</p>
+            <table border="1">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </table>
+            <form>
+                <label for="dropdown">Select Option:</label>
+                <select id="dropdown">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Page 3 -->
+        <section id="page3">
+            <h3>Welcome to Page 3</h3>
+            <p>This is some text content for the third page.</p>
+            <img src="image2.jpg" alt="Image 2">
+            <img src="animation.gif" alt="GIF Animation">
+            <form>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <button class="btn">Send</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
